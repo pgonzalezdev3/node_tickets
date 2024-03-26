@@ -3,6 +3,7 @@ const cors = require("cors");
 const { connectMongo } = require("./utils/db");
 const userRouter = require("./api/user/user.routes");
 const ticketRouter = require("./api/ticket/ticket.routes");
+const personajeRouter = require("./api/personaje/personaje.router");
 
 const {
   notFoundHandler,
@@ -27,8 +28,9 @@ app.use(cors());
 app.get("/", (req, res) => {
   res.send("Server is up");
 });
-app.use("/user", userRouter);
-app.use("/ticket", ticketRouter);
+app.use("/users", userRouter);
+app.use("/tickets", ticketRouter);
+app.use("/personajes", personajeRouter);
 
 app.use(notFoundHandler);
 app.use(errorHandler);

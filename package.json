@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "build": "parcel build src/index.html"
+    "build": "parcel build"
   },
   "author": "Pedro Gonzalez",
   "license": "ISC",
@@ -16,8 +16,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.2.2",
-    "parcel": "^2.12.0"
+    "mongoose": "^8.2.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
